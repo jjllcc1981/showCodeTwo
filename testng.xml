@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="接口自动化测试" verbose="1"> 
+  <listeners> 
+    <!--        <listener class-name="org.uncommons.reportng.HTMLReporter" />-->  
+    <!--        <listener class-name="com.health.fosuninterface.listener.ExtentTestNGIReporterListener"></listener>-->  
+    <!--        <listener class-name="org.uncommons.reportng.HTMLReporter"/>-->  
+    <!--        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->  
+    <listener class-name="com.example.showcodetwo.tools.TestReport_original"/>
+    <!--    <listener class-name="com.fxjk.test.common.testng.ExtentTestNGIReporterListener"/> --> 
+  </listeners>  
+  <test name="InterFace Test">
+    <classes> 
+      <!--            <class name="com.doctor.workspace.testcase.fosunhealthpatient.signrelation"/>-->  
+      <!--      <class name="com.doctor.workspace.testcase.workstation.PatientHealthArchivesControllerTest.GetArchivesByPatientIdTest"/>-->  
+      <class name="com.example.showcodetwo.testcase.RunTestOneTest"/>
+      <class name="com.example.showcodetwo.testcase.RunTestTwoTest"/>
+    </classes> 
+  </test> 
+</suite>
